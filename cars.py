@@ -18,10 +18,33 @@ print(len(showroom))
 # len(showroom)
 
 showroom.add('mini cooper')
-print(showroom)
 
 new_cars =set()
 
 new_cars = {'truck', 'jeep'}
 
-update(showroom)
+showroom.update(new_cars)
+
+showroom.discard("truck")
+showroom.discard("jeep")
+
+junkyard = set()
+
+junkyard = {'toyota pickup', 'mazda miata', 'flinstone', 'mini cooper', 'kia rio'}
+
+duplicate_inventory = showroom.intersection(junkyard)
+# intersection method shows you what you have in common in 2 different sets, (i.e. do i have coopers in both my showroom and my junk yard? intersection!)
+
+print(duplicate_inventory)
+
+
+showroom = showroom.union(junkyard)
+# union() similar to add()
+
+
+showroom.discard('honda accord')
+print(showroom)
+
+
+
+

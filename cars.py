@@ -12,3 +12,16 @@
 # Use the discard() method to remove any cars that you acquired from the junkyard that you do not want in your showroom.
 
 showroom = set()
+
+showroom = { 'mini cooper', 'kia rio', 'honda accord', 'numbus 2000' }
+print(len(showroom))
+# len(showroom)
+
+showroom.add('mini cooper')
+print(showroom)
+
+new_cars =set()
+
+new_cars = {'truck', 'jeep'}
+
+update(showroom)
